@@ -1,0 +1,54 @@
+store_id,store_type,photo,brand,variant,pack_size,price,facings,shelf_position,promo,notes
+K01,kirana,K01_kirana_01.jpg,SunSafe,SPF 50 gel,30 g,129,1,eye,False,FAKE TEST DATA
+K01,kirana,K01_kirana_01.jpg,LuxeSun,SPF 50 tinted,30 g,264,1,eye,True,FAKE TEST DATA
+K01,kirana,K01_kirana_01.jpg,GlowGuard,SPF 50 matte,30 g,199,3,top,False,FAKE TEST DATA
+K01,kirana,K01_kirana_02.jpg,GlowGuard,SPF 50 serum,30 g,179,4,top,True,FAKE TEST DATA
+K01,kirana,K01_kirana_02.jpg,SunSafe,SPF 30 lotion,50 ml,234,2,eye,False,FAKE TEST DATA
+K01,kirana,K01_kirana_02.jpg,LuxeSun,SPF 50 tinted,50 g,464,1,eye,False,FAKE TEST DATA
+K02,kirana,K02_kirana_01.jpg,LuxeSun,SPF 50 tinted,50 g,449,3,eye,False,FAKE TEST DATA
+K02,kirana,K02_kirana_01.jpg,AquaBlock,SPF 40 water-resistant,50 g,233,3,bottom,True,FAKE TEST DATA
+K02,kirana,K02_kirana_01.jpg,GlowGuard,SPF 50 serum,50 g,339,4,top,False,FAKE TEST DATA
+K02,kirana,K02_kirana_02.jpg,GlowGuard,SPF 50 matte,50 g,319,3,eye,False,FAKE TEST DATA
+K02,kirana,K02_kirana_02.jpg,AquaBlock,SPF 40 water-resistant,50 g,249,4,eye,False,FAKE TEST DATA
+K02,kirana,K02_kirana_02.jpg,LuxeSun,SPF 30 daily,50 g,464,4,top,False,FAKE TEST DATA
+K03,kirana,K03_kirana_01.jpg,AquaBlock,SPF 40 water-resistant,30 g,unclear,4,eye,False,FAKE TEST DATA
+K03,kirana,K03_kirana_01.jpg,Value Sun,SPF 30 lotion,50 ml,129,1,bottom,False,FAKE TEST DATA
+K03,kirana,K03_kirana_01.jpg,GlowGuard,SPF 50 serum,50 g,344,4,eye,False,FAKE TEST DATA
+K03,kirana,K03_kirana_02.jpg,AquaBlock,SPF 40 water-resistant,30 g,144,1,eye,False,FAKE TEST DATA
+K03,kirana,K03_kirana_02.jpg,Value Sun,SPF 30 lotion,50 ml,119,3,bottom,False,FAKE TEST DATA
+K03,kirana,K03_kirana_02.jpg,GlowGuard,SPF 50 serum,50 g,324,4,top,False,FAKE TEST DATA
+K04,kirana,K04_kirana_01.jpg,SunSafe,SPF 30 lotion,50 ml,219,2,top,False,FAKE TEST DATA
+K04,kirana,K04_kirana_01.jpg,Value Sun,SPF 30 lotion,50 ml,124,3,eye,False,FAKE TEST DATA
+K04,kirana,K04_kirana_01.jpg,DermaShield,SPF 50 PA+++,50 g,439,2,eye,False,FAKE TEST DATA
+K04,kirana,K04_kirana_02.jpg,DermaShield,SPF 50 PA+++,50 g,419,4,bottom,False,FAKE TEST DATA
+K04,kirana,K04_kirana_02.jpg,Value Sun,SPF 30 lotion,30 ml,79,3,bottom,False,FAKE TEST DATA
+K04,kirana,K04_kirana_02.jpg,AquaBlock,SPF 40 water-resistant,30 g,149,1,top,False,FAKE TEST DATA
+M01,modern,M01_modern_01.jpg,Value Sun,SPF 30 lotion,50 ml,144,6,bottom,False,FAKE TEST DATA
+M01,modern,M01_modern_01.jpg,DermaShield,SPF 30 kids,50 g,469,1,bottom,False,FAKE TEST DATA
+M01,modern,M01_modern_01.jpg,SunSafe,SPF 50 gel,50 g,264,5,eye,False,FAKE TEST DATA
+M01,modern,M01_modern_01.jpg,LuxeSun,SPF 30 daily,100 g,unclear,6,top,False,FAKE TEST DATA
+M01,modern,M01_modern_02.jpg,LuxeSun,SPF 50 tinted,50 g,474,3,top,False,FAKE TEST DATA
+M01,modern,M01_modern_02.jpg,GlowGuard,SPF 50 serum,100 g,694,5,top,False,FAKE TEST DATA
+M01,modern,M01_modern_02.jpg,AquaBlock,SPF 40 water-resistant,100 g,524,2,top,False,FAKE TEST DATA
+M02,modern,M02_modern_01.jpg,GlowGuard,SPF 50 serum,100 g,729,1,eye,False,FAKE TEST DATA
+M02,modern,M02_modern_01.jpg,Value Sun,SPF 30 lotion,50 ml,116,1,top,True,FAKE TEST DATA
+M02,modern,M02_modern_01.jpg,LuxeSun,SPF 50 tinted,50 g,499,3,bottom,False,FAKE TEST DATA
+M02,modern,M02_modern_02.jpg,LuxeSun,SPF 50 tinted,100 g,1029,2,bottom,False,FAKE TEST DATA
+M02,modern,M02_modern_02.jpg,Value Sun,SPF 30 lotion,50 ml,134,4,eye,False,FAKE TEST DATA
+M02,modern,M02_modern_02.jpg,AquaBlock,SPF 40 water-resistant,50 g,284,6,bottom,False,FAKE TEST DATA
+M02,modern,M02_modern_02.jpg,DermaShield,SPF 30 kids,50 g,429,1,top,False,FAKE TEST DATA
+M03,modern,M03_modern_01.jpg,AquaBlock,SPF 40 water-resistant,100 g,549,3,eye,False,FAKE TEST DATA
+M03,modern,M03_modern_01.jpg,GlowGuard,SPF 50 matte,50 g,354,5,eye,False,FAKE TEST DATA
+M03,modern,M03_modern_01.jpg,LuxeSun,SPF 50 tinted,50 g,554,3,bottom,False,FAKE TEST DATA
+M03,modern,M03_modern_01.jpg,SunSafe,SPF 30 lotion,50 ml,259,6,top,False,FAKE TEST DATA
+M03,modern,M03_modern_02.jpg,AquaBlock,SPF 40 water-resistant,50 g,242,3,bottom,True,FAKE TEST DATA
+M03,modern,M03_modern_02.jpg,GlowGuard,SPF 50 matte,100 g,593,1,eye,True,FAKE TEST DATA
+M03,modern,M03_modern_02.jpg,Value Sun,SPF 30 lotion,50 ml,134,2,eye,False,FAKE TEST DATA
+M03,modern,M03_modern_02.jpg,DermaShield,SPF 50 PA+++,100 g,929,2,bottom,False,FAKE TEST DATA
+M04,modern,M04_modern_01.jpg,DermaShield,SPF 30 kids,50 g,unclear,3,top,False,FAKE TEST DATA
+M04,modern,M04_modern_01.jpg,Value Sun,SPF 30 lotion,50 ml,129,2,eye,False,FAKE TEST DATA
+M04,modern,M04_modern_01.jpg,GlowGuard,SPF 50 serum,50 g,359,5,eye,False,FAKE TEST DATA
+M04,modern,M04_modern_02.jpg,Value Sun,SPF 30 lotion,100 ml,289,2,top,False,FAKE TEST DATA
+M04,modern,M04_modern_02.jpg,GlowGuard,SPF 50 matte,50 g,323,4,eye,True,FAKE TEST DATA
+M04,modern,M04_modern_02.jpg,LuxeSun,SPF 30 daily,100 g,984,4,eye,False,FAKE TEST DATA
+M04,modern,M04_modern_02.jpg,AquaBlock,SPF 40 water-resistant,50 g,269,1,eye,False,FAKE TEST DATA

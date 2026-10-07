@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#122b31">
+    <meta name="description" content="ShelfScout compares candidate products across kirana and modern stores, then flags prices that need human review. A synthetic FMCG portfolio study.">
+    <title>ShelfScout · Price Gap Agent</title>
+    <style>
+:root{--ink:#122b31;--muted:#52666a;--cream:#f7f5ec;--paper:#fffdf7;--line:#d9dfd8;--mint:#d7e9df;--coral:#ef7e60;--yellow:#f5cd6c;--shadow:0 22px 60px rgba(14,45,48,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:inherit}button,select{font:inherit}.wrap{width:min(1180px,calc(100% - 48px));margin:0 auto}.sample-ribbon{background:var(--ink);color:#eaf7ee;text-align:center;font-size:10px;font-weight:750;letter-spacing:.17em;padding:8px 12px}.sample-ribbon span{color:var(--coral);margin:0 11px}.site-header{height:94px;display:flex;align-items:center;justify-content:space-between;gap:24px;border-bottom:1px solid var(--line)}.wordmark{display:flex;gap:11px;align-items:center;text-decoration:none;font-size:13px;line-height:1.02;font-weight:900;letter-spacing:.13em}.mark{width:37px;height:37px;border-radius:10px;background:var(--ink);color:var(--cream);display:grid;place-items:center;position:relative;font-family:Georgia,serif;font-size:22px;font-style:italic}.mark span{width:8px;height:8px;border-radius:50%;position:absolute;background:var(--coral);right:-2px;top:-3px}.site-header nav{display:flex;gap:34px}.site-header nav a{text-decoration:none;font-size:13px;color:#3b5256;font-weight:650}.site-header nav a:hover,.text-link:hover{color:#d46649}.edition,.section-kicker,.eyebrow,.visual-top,.visual-bottom>div>span,.sample-stamp,.toolbar,.section-count,th,.review-head,.steps article>span,.site-footer{font-size:11px;font-weight:800;letter-spacing:.13em}.edition{color:#668080}.edition span{font-size:17px;color:var(--coral)}.hero{min-height:570px;display:grid;grid-template-columns:1.15fr .85fr;gap:8%;align-items:center;padding-top:58px;padding-bottom:68px}.eyebrow{display:flex;align-items:center;gap:12px;color:#aa5b45}.eyebrow-line{width:29px;height:1px;background:var(--coral)}h1,h2,h3,p{margin-top:0}h1,h2{font-family:Georgia,"Times New Roman",serif;letter-spacing:-.045em;font-weight:500}h1{font-size:clamp(52px,6.1vw,90px);line-height:1.03;margin:27px 0 24px}h1 em{font-weight:400;color:#c96950}.lead{font-size:18px;max-width:565px;line-height:1.65;color:#425c5f}.hero-actions{display:flex;align-items:center;gap:28px;margin-top:32px}.button{display:inline-flex;gap:25px;align-items:center;justify-content:space-between;text-decoration:none;padding:14px 19px;font-size:13px;font-weight:750;border-radius:5px}.primary{color:#fff;background:var(--ink)}.primary:hover{background:#24515a}.text-link{font-size:13px;font-weight:750;text-decoration:none}.hero-disclosure{font-size:11px;color:#63787a;margin-top:45px}.dot{display:inline-block;background:var(--coral);width:7px;height:7px;border-radius:50%;margin-right:5px}.hero-visual{background:#e6ede4;box-shadow:var(--shadow);border:1px solid #cbd8cb;transform:rotate(2deg);padding:28px 29px 20px;position:relative}.hero-visual:before{content:"";position:absolute;z-index:-1;inset:12px -9px -12px 9px;border:1px solid #8ea69d}.visual-top{display:flex;justify-content:space-between;color:#536b66;border-bottom:1px solid #a8bdb1;padding-bottom:17px}.visual-product{font:italic 30px/1.16 Georgia,serif;min-height:90px;padding:23px 0}.price-lines{border-top:1px solid #a8bdb1;border-bottom:1px solid #a8bdb1}.price-line{display:flex;justify-content:space-between;align-items:center;padding:15px 0;gap:10px}.price-line+.price-line{border-top:1px solid #c0d0c6}.price-line>span{display:flex;align-items:center;gap:10px;font-size:12px;font-weight:800;letter-spacing:.1em}.price-line strong{font:35px/1 Georgia,serif;letter-spacing:-.04em}.store-symbol{width:18px;height:18px;display:inline-block;border:2px solid var(--ink)}.kirana-symbol{border-radius:50%}.modern-symbol{background:var(--coral);border-color:var(--coral);transform:rotate(45deg);width:14px;height:14px;margin:2px}.visual-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:21px}.visual-bottom>div{display:grid;gap:3px}.visual-bottom strong{font:31px Georgia,serif;color:#b95741}.sample-stamp{border:2px solid #b95741;color:#b95741;line-height:1.2;text-align:center;transform:rotate(-9deg);padding:8px 11px}.card-note{font-size:10px;color:#57706a;margin:19px 0 0}.metric-band{background:#dceadf;padding:29px 0 34px}.metric-band .section-kicker{color:#46665e}.metrics{display:grid;grid-template-columns:repeat(4,1fr);margin-top:18px}.metric{padding:0 25px;border-left:1px solid #b6cbbd}.metric:first-child{padding-left:0;border-left:none}.metric strong{font:45px/1.05 Georgia,serif;display:block;letter-spacing:-.05em}.metric span{display:block;color:#3d6259;font-size:12px;margin-top:7px}.metric.skeleton{height:75px}.section{padding-top:94px;padding-bottom:100px}.section-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:33px}.section-kicker{color:#bf694f}.section h2{font-size:clamp(39px,4vw,58px);line-height:1.08;margin:13px 0}.section-heading p,.review-grid>div>p{max-width:650px;color:var(--muted);line-height:1.6;margin-bottom:0}.section-count{border:1px solid var(--line);white-space:nowrap;padding:9px 13px}.toolbar{display:flex;gap:23px;align-items:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:14px 0;color:#6b7e7c}.toolbar label{display:flex;align-items:center;gap:9px}.toolbar select{background:transparent;border:0;color:var(--ink);font-size:13px;font-weight:700;letter-spacing:0;max-width:190px;cursor:pointer}.toolbar-note{margin-left:auto;letter-spacing:0;font-weight:500;font-size:12px}.table-scroll{overflow-x:auto}table{width:100%;border-collapse:collapse;min-width:770px}th{text-align:left;color:#718380;padding:21px 10px 12px 0;font-size:10px}td{padding:20px 10px 20px 0;border-top:1px solid var(--line);vertical-align:middle;font-size:14px}tbody tr:hover{background:#eef2e9}td strong{display:block;font-size:14px}td small{display:block;color:#718380;margin-top:3px}.money{font-family:Georgia,serif;font-size:22px}.gap-pill{display:inline-block;border-radius:100px;padding:6px 10px;background:#fbe5d9;color:#9a4a35;font-weight:750;font-size:12px;white-space:nowrap}.gap-pill.lower{background:#dcece0;color:#386c56}.evidence{color:#526b65;font-size:12px}.table-footnote{font-size:12px;color:#70817c;margin-top:18px;max-width:850px}.loading,.empty{color:#718380;font-style:italic;padding:30px 0}.review-section{background:#17363a;color:#f9f8ed}.review-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:10%;align-items:start}.review-grid .section-kicker{color:#f4a288}.review-grid>div>p{color:#b7cbc5}.review-rule{margin-top:35px;border-top:1px solid #54716e;padding-top:18px;display:flex;gap:15px;max-width:350px;color:#d2dfd5;font-size:13px}.rule-icon{border:1px solid #f4a288;color:#f4a288;display:grid;place-items:center;min-width:23px;height:23px;border-radius:50%;font-size:13px;font-weight:700}.review-card{background:#fcfbf3;color:var(--ink);padding:25px 26px;box-shadow:0 18px 45px #0a23282e}.review-head{display:flex;align-items:center;justify-content:space-between;padding-bottom:17px;border-bottom:1px solid var(--line);color:#a9563d}.review-head strong{font:32px Georgia,serif;color:var(--ink)}.review-item{padding:16px 0;border-bottom:1px solid var(--line)}.review-item:last-child{border:0;padding-bottom:0}.review-item strong{display:block;font-size:14px}.review-item p{font-size:12px;color:#5e7773;margin:4px 0 0}.review-item .tag{display:inline-block;vertical-align:middle;border-radius:3px;background:#fbe2d5;color:#a3533e;font-size:10px;font-weight:800;letter-spacing:.08em;padding:2px 5px;margin-left:6px}.review-more{font-size:12px;color:#748784;margin-top:12px}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:36px}.steps article{border-top:2px solid var(--ink);padding:16px 6px 0 0}.steps article>span{color:#c1654c}.steps h3{font:30px Georgia,serif;margin:17px 0 9px}.steps p{font-size:13px;color:#5a7071;line-height:1.65}.method-note{margin-top:35px;padding:20px 24px;background:#e6ede2;display:flex;gap:30px;align-items:flex-start}.method-note strong{white-space:nowrap;color:#b15d45;font-size:13px}.method-note span{color:#4c6864;font-size:13px}.site-footer{background:#10292d;color:#e3e9df}.footer-inner{min-height:100px;display:flex;align-items:center;justify-content:space-between;gap:25px}.footer-inner>div{display:grid;gap:2px}.footer-inner span{letter-spacing:0;text-transform:none;font-size:11px;color:#a9bdb6;font-weight:500}.footer-inner a{text-decoration:none;color:#dbe8da}
+@media(max-width:850px){.hero{grid-template-columns:1fr;gap:45px}.hero-visual{max-width:560px;transform:rotate(0)}.review-grid{grid-template-columns:1fr;gap:36px}.steps{grid-template-columns:repeat(2,1fr)}.toolbar-note{display:none}}@media(max-width:600px){.wrap{width:min(100% - 32px,1180px)}.sample-ribbon{font-size:8px}.site-header{height:74px}.site-header nav{gap:13px}.site-header nav a{font-size:11px}.edition{display:none}.hero{padding-top:48px}.hero-actions{flex-wrap:wrap;gap:18px}h1{font-size:55px}.lead{font-size:16px}.hero-disclosure{margin-top:28px}.metrics{grid-template-columns:repeat(2,1fr);row-gap:25px}.metric:nth-child(3){border:0;padding-left:0}.metric strong{font-size:38px}.section{padding-top:65px;padding-bottom:70px}.section-heading{align-items:flex-start;flex-direction:column;gap:10px}.toolbar{flex-wrap:wrap;gap:12px}.steps{gap:16px}.steps h3{font-size:25px}.method-note{display:grid;gap:7px}.footer-inner{font-size:10px}}
+.review-toggle{margin-top:16px;border:0;background:transparent;color:#a3533e;font-weight:750;cursor:pointer;padding:4px 0}.review-toggle:hover{text-decoration:underline}[hidden]{display:none!important}a:focus-visible,button:focus-visible,select:focus-visible{outline:3px solid var(--coral);outline-offset:3px}
+
+    </style>
+
+  </head>
+  <body>
+    <div class="sample-ribbon" id="dataset-banner">DEMO STUDY <span aria-hidden="true">/</span> ALL STORE AND PRICE DATA IS SYNTHETIC</div>
+    <header class="site-header wrap">
+      <a class="wordmark" href="#top" aria-label="ShelfScout home"><span class="mark" aria-hidden="true">S<span></span></span><span>SHELF<br>SCOUT</span></a>
+      <nav aria-label="Main navigation"><a href="#comparisons">Price gaps</a><a href="#review">Review queue</a><a href="#method">Method</a></nav>
+      <span class="edition">FIELD NOTE 001 <span aria-hidden="true">↗</span></span>
+    </header>
+
+    <main id="top">
+      <section class="hero wrap" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> FMCG RETAIL INTELLIGENCE / SUNSCREEN</div>
+          <h1 id="hero-title">Same product.<br><em>Different price?</em></h1>
+          <p class="lead">A small agent for a big retail question: find possible matches across kirana and modern stores, compare listed sample prices, and send uncertain cases for review.</p>
+          <div class="hero-actions"><a class="button primary" href="#comparisons">Explore the price gaps <span aria-hidden="true">↗</span></a><a class="text-link" href="#method">See how it works <span aria-hidden="true">↓</span></a></div>
+          <p class="hero-disclosure" id="hero-disclosure"><span class="dot"></span> Independent portfolio project · Simulated store audit · No claim about actual market prices</p>
+        </div>
+        <div class="hero-visual" aria-label="Featured price comparison from synthetic data">
+          <div class="visual-top"><span>THE COMPARISON CARD</span><span>01 / 01</span></div>
+          <div class="visual-product" id="feature-name">Loading sample study…</div>
+          <div class="price-lines">
+            <div class="price-line"><span><span class="store-symbol kirana-symbol" aria-hidden="true"></span> KIRANA</span><strong id="feature-kirana">—</strong></div>
+            <div class="price-line"><span><span class="store-symbol modern-symbol" aria-hidden="true"></span> MODERN</span><strong id="feature-modern">—</strong></div>
+          </div>
+          <div class="visual-bottom"><div><span>OBSERVED GAP</span><strong id="feature-gap">—</strong></div><span class="sample-stamp">SAMPLE<br>DATA</span></div>
+          <p class="card-note" id="card-note">Candidate product match. Price source in the original sample is not consistently identified.</p>
+        </div>
+      </section>
+
+      <section class="metric-band" aria-labelledby="snapshot-title"><div class="wrap"><div class="section-kicker" id="snapshot-title">01 / THE AUDIT AT A GLANCE</div><div class="metrics" id="metrics" aria-live="polite"><div class="metric skeleton"></div><div class="metric skeleton"></div><div class="metric skeleton"></div><div class="metric skeleton"></div></div></div></section>
+
+      <section class="section wrap comparisons" id="comparisons" aria-labelledby="comparison-title">
+        <div class="section-heading"><div><span class="section-kicker">02 / MATCHED PRICE CHECK</span><h2 id="comparison-title">Where prices diverge</h2><p>Identical brand, variant and pack size across store formats. These are candidate matches until a barcode confirms them.</p></div><span class="section-count" id="comparison-count">— MATCHES</span></div>
+        <div class="toolbar"><label for="brand-filter">BRAND <select id="brand-filter"><option value="all">All brands</option></select></label><label for="sort-order">SORT BY <select id="sort-order"><option value="gap-desc">Biggest ₹ gap</option><option value="premium-desc">Highest modern premium</option><option value="name">Product name</option></select></label><span class="toolbar-note">Regular, readable price observations only</span></div>
+        <div class="table-scroll"><table><thead><tr><th scope="col">MATCHED PRODUCT</th><th scope="col">KIRANA MEDIAN</th><th scope="col">MODERN MEDIAN</th><th scope="col">MODERN VS KIRANA</th><th scope="col">EVIDENCE</th></tr></thead><tbody id="comparison-rows"><tr><td colspan="5" class="loading">Loading the sample comparison…</td></tr></tbody></table></div>
+        <p class="table-footnote">Prices are in Indian rupees per identical pack. Each channel figure is a median across eligible stores. A higher listed price does not establish a reason for the difference.</p>
+      </section>
+
+      <section class="section review-section" id="review" aria-labelledby="review-title"><div class="wrap review-grid"><div><span class="section-kicker">03 / THE AGENT'S INBOX</span><h2 id="review-title">Questions before conclusions.</h2><p>Unclear prices, conflicting tags and promotional observations can change the story. The agent surfaces them so a person can check the original evidence.</p><div class="review-rule"><span class="rule-icon" aria-hidden="true">!</span><span>Nothing in this queue is silently treated as a clean price match.</span></div></div><div class="review-card"><div class="review-head"><span>NEEDS HUMAN REVIEW</span><strong id="review-count">—</strong></div><div id="review-list"><p class="loading">Loading review flags…</p></div></div></div></section>
+
+      <section class="section wrap method-section" id="method" aria-labelledby="method-title"><div class="section-heading"><div><span class="section-kicker">04 / THE METHOD</span><h2 id="method-title">A small, explainable agent.</h2></div></div><div class="steps"><article><span>01</span><h3>Collect</h3><p>Record store, exact pack, listed price, promotion and the source of the price. The included sample is made up.</p></article><article><span>02</span><h3>Match</h3><p>Compare brand, variant and pack size. A barcode is the next step for verified SKU matching.</p></article><article><span>03</span><h3>Check</h3><p>Set aside unclear, promotional or conflicting prices. Queue anything uncertain for human review.</p></article><article><span>04</span><h3>Explain</h3><p>Show a channel median and gap only when clean observations exist in both formats. Keep the store counts visible.</p></article></div><div class="method-note"><strong>Portfolio lens</strong><span>This demonstrates product matching, retail measurement, data quality checks and a decision-ready view. Shelf placement can inform follow-up questions; this data cannot explain inventory, margins or why a store chose a price.</span></div></section>
+    </main>
+
+    <footer class="site-footer"><div class="wrap footer-inner"><div><strong>SHELFSCOUT</strong><span>Independent FMCG analytics portfolio project</span></div><a href="#top">BACK TO TOP ↑</a></div></footer>
+    <script type="application/json" id="sample-data">{"meta":{"title":"ShelfScout · Price Check","category":"sunscreen","synthetic":true,"match_rule":"brand + variant + pack size, with unit; unverified without consistent barcode","price_rule":"Median of one clear, non-promo listed price per store and channel, only for candidate products in both channels. Conflicting store/product prices are excluded.","price_source_rule":"Differing known sources such as shelf_label and pack_mrp are excluded. Missing sources remain candidate comparisons and require field confirmation; the bundled sample has no recorded source.","difference_rule":"Modern minus kirana; percentage relative to kirana."},"summary":{"rows":53,"stores":8,"candidate_skus":23,"cross_channel_skus":6,"comparable_skus":5,"unclear_prices":3,"invalid_prices":0,"conflicting_store_skus":5,"source_mismatch_skus":0,"missing_price_source_observations":53,"promo_observations":7,"unknown_promo_observations":0,"regular_store_prices":35},"comparisons":[{"brand":"GlowGuard","variant":"SPF 50 matte","pack_size":"50 g","kirana_price":319.0,"modern_price":354.0,"difference_inr":35.0,"difference_pct":11.0,"kirana_stores":1,"modern_stores":1,"store_prices":{"kirana":[{"store_id":"K02","price_inr":319.0}],"modern":[{"store_id":"M03","price_inr":354.0}]},"verified":false,"verification_status":"candidate_match_needs_barcode","price_source_status":"unrecorded"},{"brand":"GlowGuard","variant":"SPF 50 serum","pack_size":"50 g","kirana_price":339.0,"modern_price":359.0,"difference_inr":20.0,"difference_pct":5.9,"kirana_stores":1,"modern_stores":1,"store_prices":{"kirana":[{"store_id":"K02","price_inr":339.0}],"modern":[{"store_id":"M04","price_inr":359.0}]},"verified":false,"verification_status":"candidate_match_needs_barcode","price_source_status":"unrecorded"},{"brand":"LuxeSun","variant":"SPF 50 tinted","pack_size":"50 g","kirana_price":456.5,"modern_price":499.0,"difference_inr":42.5,"difference_pct":9.3,"kirana_stores":2,"modern_stores":3,"store_prices":{"kirana":[{"store_id":"K01","price_inr":464.0},{"store_id":"K02","price_inr":449.0}],"modern":[{"store_id":"M01","price_inr":474.0},{"store_id":"M02","price_inr":499.0},{"store_id":"M03","price_inr":554.0}]},"verified":false,"verification_status":"candidate_match_needs_barcode","price_source_status":"unrecorded"},{"brand":"SunSafe","variant":"SPF 30 lotion","pack_size":"50 ml","kirana_price":226.5,"modern_price":259.0,"difference_inr":32.5,"difference_pct":14.3,"kirana_stores":2,"modern_stores":1,"store_prices":{"kirana":[{"store_id":"K01","price_inr":234.0},{"store_id":"K04","price_inr":219.0}],"modern":[{"store_id":"M03","price_inr":259.0}]},"verified":false,"verification_status":"candidate_match_needs_barcode","price_source_status":"unrecorded"},{"brand":"Value Sun","variant":"SPF 30 lotion","pack_size":"50 ml","kirana_price":124.0,"modern_price":134.0,"difference_inr":10.0,"difference_pct":8.1,"kirana_stores":1,"modern_stores":3,"store_prices":{"kirana":[{"store_id":"K04","price_inr":124.0}],"modern":[{"store_id":"M01","price_inr":144.0},{"store_id":"M03","price_inr":134.0},{"store_id":"M04","price_inr":129.0}]},"verified":false,"verification_status":"candidate_match_needs_barcode","price_source_status":"unrecorded"}],"review_queue":[{"severity":"high","title":"Conflicting prices within a store","detail":"AquaBlock SPF 40 water-resistant 50 g has prices INR 233, 249 in K02 (CSV rows 9, 12). All observations for this store/product were excluded.","store_id":"K02","rows":[9,12]},{"severity":"high","title":"Conflicting prices within a store","detail":"Value Sun SPF 30 lotion 50 ml has prices INR 119, 129 in K03 (CSV rows 15, 18). All observations for this store/product were excluded.","store_id":"K03","rows":[15,18]},{"severity":"high","title":"Conflicting prices within a store","detail":"GlowGuard SPF 50 serum 50 g has prices INR 324, 344 in K03 (CSV rows 16, 19). All observations for this store/product were excluded.","store_id":"K03","rows":[16,19]},{"severity":"high","title":"Conflicting prices within a store","detail":"DermaShield SPF 50 PA+++ 50 g has prices INR 419, 439 in K04 (CSV rows 22, 23). All observations for this store/product were excluded.","store_id":"K04","rows":[22,23]},{"severity":"high","title":"Conflicting prices within a store","detail":"Value Sun SPF 30 lotion 50 ml has prices INR 116, 134 in M02 (CSV rows 34, 37). All observations for this store/product were excluded.","store_id":"M02","rows":[34,37]},{"severity":"medium","title":"Unclear listed price","detail":"CSV row 14: price is missing or unclear. Check the shelf or pack before comparing.","store_id":"K03","row":14},{"severity":"medium","title":"Unclear listed price","detail":"CSV row 29: price is missing or unclear. Check the shelf or pack before comparing.","store_id":"M01","row":29},{"severity":"medium","title":"Unclear listed price","detail":"CSV row 48: price is missing or unclear. Check the shelf or pack before comparing.","store_id":"M04","row":48}]}</script>
+    <script>
+const money = value => new Intl.NumberFormat('en-IN', {
+  style: 'currency', currency: 'INR', maximumFractionDigits: 1
+}).format(value);
+
+const number = value => new Intl.NumberFormat('en-IN').format(value);
+const byId = id => document.getElementById(id);
+const cell = (row, content, className = '') => {
+  const element = document.createElement('td');
+  element.className = className;
+  if (typeof content === 'string') element.textContent = content;
+  else element.append(content);
+  row.append(element);
+  return element;
+};
+
+function renderMetrics(summary) {
+  const items = [
+    [number(summary.stores), 'stores in the audit'],
+    [number(summary.cross_channel_skus), 'products seen in both formats'],
+    [number(summary.comparable_skus), 'clean price comparisons'],
+    [number(summary.unclear_prices), 'prices marked unclear']
+  ];
+  const container = byId('metrics');
+  container.replaceChildren();
+  items.forEach(([value, label]) => {
+    const item = document.createElement('div');
+    item.className = 'metric';
+    const strong = document.createElement('strong');
+    strong.textContent = value;
+    const span = document.createElement('span');
+    span.textContent = label;
+    item.append(strong, span);
+    container.append(item);
+  });
+}
+
+function gapText(item) {
+  const sign = item.difference_inr > 0 ? '+' : '';
+  return `${sign}${money(item.difference_inr)} · ${sign}${Number(item.difference_pct).toFixed(1)}%`;
+}
+
+function renderFeature(comparisons) {
+  const feature = [...comparisons].sort((a, b) => Math.abs(b.difference_inr) - Math.abs(a.difference_inr))[0];
+  if (!feature) {
+    byId('feature-name').textContent = 'No clean cross-format match yet';
+    byId('feature-gap').textContent = 'Review needed';
+    return;
+  }
+  byId('feature-name').textContent = `${feature.brand} · ${feature.variant} · ${feature.pack_size}`;
+  byId('feature-kirana').textContent = money(feature.kirana_price);
+  byId('feature-modern').textContent = money(feature.modern_price);
+  byId('feature-gap').textContent = gapText(feature);
+}
+
+function renderComparisons(comparisons) {
+  const selected = byId('brand-filter').value;
+  const sort = byId('sort-order').value;
+  const rows = comparisons.filter(item => selected === 'all' || item.brand === selected);
+  if (sort === 'gap-desc') rows.sort((a, b) => Math.abs(b.difference_inr) - Math.abs(a.difference_inr));
+  else if (sort === 'premium-desc') rows.sort((a, b) => b.difference_pct - a.difference_pct);
+  else rows.sort((a, b) => `${a.brand} ${a.variant}`.localeCompare(`${b.brand} ${b.variant}`));
+
+  byId('comparison-count').textContent = `${rows.length} ${rows.length === 1 ? 'MATCH' : 'MATCHES'}`;
+  const body = byId('comparison-rows');
+  body.replaceChildren();
+  if (!rows.length) {
+    const tr = document.createElement('tr');
+    cell(tr, 'No eligible comparison for this filter. Check the review queue.', 'empty').colSpan = 5;
+    body.append(tr);
+    return;
+  }
+  rows.forEach(item => {
+    const tr = document.createElement('tr');
+    const product = document.createElement('div');
+    const brand = document.createElement('strong');
+    brand.textContent = item.brand;
+    const detail = document.createElement('small');
+    detail.textContent = `${item.variant} · ${item.pack_size}`;
+    product.append(brand, detail);
+    cell(tr, product);
+    cell(tr, money(item.kirana_price), 'money');
+    cell(tr, money(item.modern_price), 'money');
+    const pill = document.createElement('span');
+    pill.className = `gap-pill${item.difference_inr < 0 ? ' lower' : ''}`;
+    pill.textContent = gapText(item);
+    cell(tr, pill);
+    const evidence = document.createElement('div');
+    evidence.className = 'evidence';
+    evidence.textContent = `${item.kirana_stores} K · ${item.modern_stores} M stores`;
+    const status = document.createElement('small');
+    status.textContent = item.verified ? 'Barcode verified' : 'Description match · verify barcode';
+    evidence.append(status);
+    cell(tr, evidence);
+    body.append(tr);
+  });
+}
+
+function renderReview(queue) {
+  const container = byId('review-list');
+  byId('review-count').textContent = number(queue.length);
+  container.replaceChildren();
+  if (!queue.length) {
+    const p = document.createElement('p');
+    p.textContent = 'No review flags in this dataset.';
+    container.append(p);
+    return;
+  }
+  const list = document.createElement('div');
+  queue.forEach(item => {
+    const article = document.createElement('article');
+    article.className = 'review-item';
+    const heading = document.createElement('strong');
+    heading.textContent = item.title;
+    const tag = document.createElement('span');
+    tag.className = 'tag';
+    tag.textContent = (item.severity || 'review').toUpperCase();
+    heading.append(tag);
+    const p = document.createElement('p');
+    p.textContent = item.detail;
+    article.append(heading, p);
+    list.append(article);
+  });
+  container.append(list);
+  if (queue.length > 4) {
+    [...list.children].slice(4).forEach(item => item.hidden = true);
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'review-toggle';
+    button.textContent = `Show all ${queue.length} flags ↓`;
+    button.setAttribute('aria-expanded', 'false');
+    button.addEventListener('click', () => {
+      const expanded = button.getAttribute('aria-expanded') !== 'true';
+      [...list.children].slice(4).forEach(item => item.hidden = !expanded);
+      button.setAttribute('aria-expanded', String(expanded));
+      button.textContent = expanded ? 'Show fewer ↑' : `Show all ${queue.length} flags ↓`;
+    });
+    container.append(button);
+  }
+}
+
+async function init() {
+  try {
+    const data = JSON.parse(byId('sample-data').textContent);
+    if (!data.meta?.synthetic) {
+      byId('dataset-banner').textContent = 'FIELD STUDY / CHECK SHARING PERMISSIONS BEFORE PUBLISHING';
+      byId('hero-disclosure').textContent = 'Field observations · Confirm product identity and price source before sharing conclusions';
+    }
+    if (data.summary.missing_price_source_observations) {
+      byId('card-note').textContent = `${data.summary.missing_price_source_observations} observations lack a recorded price source. Candidate product match; verify original evidence.`;
+    } else {
+      byId('card-note').textContent = 'Candidate product match. Confirm its barcode before treating the packs as identical.';
+    }
+    renderMetrics(data.summary);
+    renderFeature(data.comparisons);
+    const brands = [...new Set(data.comparisons.map(item => item.brand))].sort();
+    brands.forEach(brand => {
+      const option = document.createElement('option');
+      option.value = brand;
+      option.textContent = brand;
+      byId('brand-filter').append(option);
+    });
+    renderComparisons(data.comparisons);
+    renderReview(data.review_queue);
+    byId('brand-filter').addEventListener('change', () => renderComparisons(data.comparisons));
+    byId('sort-order').addEventListener('change', () => renderComparisons(data.comparisons));
+  } catch (error) {
+    byId('comparison-rows').replaceChildren();
+    const tr = document.createElement('tr');
+    cell(tr, `Could not read the embedded sample: ${error.message}. Download this file again.`, 'empty').colSpan = 5;
+    byId('comparison-rows').append(tr);
+    byId('review-list').textContent = 'No review data loaded.';
+    byId('feature-name').textContent = 'Demo data unavailable';
+  }
+}
+
+init();
+
+    </script>
+  </body>
+</html>
